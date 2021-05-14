@@ -1,4 +1,6 @@
-# MeuProjeto
+# Primeiro Projeto em Angular
+
+Projeto feito durante as aulas do curso Desenvolvimento SPQ com Angular no http://desenvolvedor.io/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
