@@ -1,0 +1,37 @@
+<div class="container main-container">
+    <h3>Interpolation</h3>
+    <label [ngClass]="{
+    'text-secondary':contarCliques < 3,
+    'text-success':contarCliques >= 3,
+    'text-warning':contarCliques >= 5,
+    'text-danger':contarCliques >= 9
+    }">             
+        meu numero de cliques é: {{contarCliques}}</label>
+    <br>
+    <button class="btn btn-info"   (click)="adicionarClique()"  [disabled]="contarCliques>=10">Clique me +</button>
+    <button class="btn btn-warning"   (click)="SubtrairClique()"  [disabled]="contarCliques==0">Clique me -</button>
+    <br>
+    <br>
+
+    <h3>property bind</h3>
+    <img [src]="urlImagem" height="50px" width="50px">
+    <br>
+    <br>
+
+    <h3>two-away-binding</h3>
+    <!-- <input type="text" (keyup)='KeyUp($event)' placeholder="digite seu nome">
+    <br>
+    <br>
+    <label>Seu nome é: {{nome}}</label> -->
+
+    <!-- <input type="text" [ngModel]="nome" (ngModelChange)='nome = $event' placeholder="digite seu nome">
+    <br>
+    <br>
+    <label>Seu nome é: {{nome}}</label> -->
+
+    <input type="text" [(ngModel)]="nome"  placeholder="digite seu nome">
+    <br>
+    <br>
+    <label [ngClass]="nome">Seu nome é: {{nome}}</label>
+
+</div>
